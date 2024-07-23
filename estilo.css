@@ -1,0 +1,107 @@
+.menu {
+    padding: 1%;
+}
+
+.body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.fundo {
+    background-image: url('img/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); 
+    z-index: -1;
+}
+
+.conteudo {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   padding: 0.1vh;
+}
+
+.teste {
+    padding: 0.3rem;
+}
+
+.img {
+    opacity: 0.8;
+    height: 50vh;
+    width: 100%;
+}
+
+.square {
+    width: 100%;
+    height: 100%;
+    background-color: #4db5d7cc;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quadrado {
+    padding: 10%;
+}
+
+.text-highlight {
+    background-color: #00000099; 
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+/*conhecimento e formação*/
+
+table {
+    background-color: #4db4d7c3;
+
+}
+th, td {
+    border: 1px solid #000000cc;
+    text-align: center; 
+    color: #ffffff;
+    vertical-align: middle;
+    
+}
+th {
+    background-color: #4db4d7c3;
+    text-align: center; 
+}
+
+.container{
+    padding-top: 3rem;
+
+}
+
+form .form-control {
+    background-color: #ffffffb3; /* Cor de fundo dos campos do formulário */
+    color: #000;
+    border: 1px solid #ddd;
+}
+
+form .form-control:focus {
+    border-color: #4db5d7cc;
+    box-shadow: none;
+}
+
