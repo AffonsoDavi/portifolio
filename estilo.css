@@ -61,7 +61,7 @@
 }
 
 .fundo {
-    background-image: url('../../portifolio/img/fundo.jpg');
+    background-image: url('img/fundo.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
