@@ -1,5 +1,57 @@
 .menu {
-    padding: 1%;
+    padding: 0;
+}
+
+.navbar-custom {
+    background-color: #4db5d7cc; 
+    padding: 0;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #fff; 
+    font-size: 1.5rem; 
+    margin-left: 2rem; 
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #d1d1d1; 
+}
+
+.navbar-custom .navbar-brand {
+    color: #fff;
+}
+
+.navbar-custom .navbar-brand:hover {
+    color: #d1d1d1; 
+}
+
+.navbar-custom .navbar-toggler {
+    border-color: #fff; 
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23fff" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E'); /* Cor do ícone do menu no mobile */
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center; 
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0; 
+    }
+
+    .navbar-custom .navbar-nav .nav-link {
+        font-size: 1.2rem; 
+        padding: 1rem 2rem; 
+    }
 }
 
 .body{
@@ -9,7 +61,7 @@
 }
 
 .fundo {
-    background-image: url('img/fundo.jpg');
+    background-image: url('../../img/fundo.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -37,8 +89,9 @@
    padding: 0.1vh;
 }
 
-.teste {
-    padding: 0.3rem;
+.espacoTop {
+   
+    padding-top: 3rem;
 }
 
 .img {
@@ -89,13 +142,8 @@ th {
     text-align: center; 
 }
 
-.container{
-    padding-top: 3rem;
-
-}
-
 form .form-control {
-    background-color: #ffffffb3; /* Cor de fundo dos campos do formulário */
+    background-color: #ffffffb3;
     color: #000;
     border: 1px solid #ddd;
 }
@@ -104,4 +152,13 @@ form .form-control:focus {
     border-color: #4db5d7cc;
     box-shadow: none;
 }
+
+.link-black {
+    color: black;
+}
+
+.link-black:hover {
+    color: black; /* Mantém a cor preta quando o mouse passa por cima */
+}
+
 
