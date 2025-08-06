@@ -16,71 +16,74 @@
 
         <div class="container">
             <div id="menu-container"></div>
-            </div>
+        </div>
         <div class="container espacoTop">
-    
+
             <div class="container mt-4">
-                <table class="table table-bordered table-striped">
-                    <thead>
-                        <tr>
-                            <th scope="col">Instituição de Ensino</th>
-                            <th scope="col">Curso</th>
-                            <th scope="col">Conhecimentos Adquiridos</th>
-                            <th scope="col">Anos Estudados</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Senai Norte Joinville</td>
-                            <td>Analise e Desenvolvimento de Sistemas</td>
-                            <td>
-                                Programação em Linguagens como Java, Python, PHP e NodeJS;<br>
-                                Desenvolvimento Web (HTML, CSS, JavaScript);<br>
-                                Testes de Software e Controle de Qualidade;<br>
-                                Banco de Dados SQL Server, MySql, Oracle;<br>
-                                Estruturas de Dados e Algoritmos;<br>
-                                Gerenciamento de projetos;<br>
-                                Segurança da Informação;<br>
-                            </td>
-                            <td>2022 - Atual</td>
-                        </tr>
-                        <tr>
-                            <td>E.E.B. Arnaldo Moreira Duart</td>
-                            <td>Ensino Médio</td>
-                            <td>
-                                Matemática, Português, Inglês, História, Geografia, Química, Física, Biologia,
-                                Educação Física, Língua Estrangeira e Arte.
-                            </td>
-                            <td>2016 - 2019</td>
-                        </tr>
-                        <tr>
-                            <td>E.M.P. Zulma do Rosário Miranda</td>
-                            <td>Ensino Fundamental</td>
-                            <td>
-                                Matemática, Português, Inglês, História, Geografia, Química, Física, Biologia,
-                                Educação Física, Língua Estrangeira e Arte.
-                            </td>
-                            <td>2007 - 2015</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h2 class="text-center mb-4">Formações</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped align-middle">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">Instituição</th>
+                                <th scope="col">Curso</th>
+                                <th scope="col">Conhecimentos</th>
+                                <th scope="col">Anos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Senai Norte Joinville</td>
+                                <td>Analise e Desenvolvimento de Sistemas</td>
+                                <td>
+                                    Programação em Linguagens como Java, Python, PHP e NodeJS;<br>
+                                    Desenvolvimento Web (HTML, CSS, JavaScript);<br>
+                                    Testes de Software e Controle de Qualidade;<br>
+                                    Banco de Dados SQL Server, MySql, Oracle;<br>
+                                    Estruturas de Dados e Algoritmos;<br>
+                                    Gerenciamento de projetos;<br>
+                                    Segurança da Informação;<br>
+                                </td>
+                                <td>2022 - Atual</td>
+                            </tr>
+                            <tr>
+                                <td>E.E.B. Arnaldo Moreira Duart</td>
+                                <td>Ensino Médio</td>
+                                <td>
+                                    Disciplinas da base comum: Matemática, Português, Ciências, História, Geografia,
+                                    entre outras.
+                                </td>
+                                <td>2016 - 2019</td>
+                            </tr>
+                            <tr>
+                                <td>E.M.P. Zulma do Rosário Miranda</td>
+                                <td>Ensino Fundamental</td>
+                                <td>
+                                    Disciplinas da base comum: Matemática, Português, Ciências, História, Geografia,
+                                    entre outras.
+                                </td>
+                                <td>2007 - 2015</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          fetch('menu.html')
-            .then(response => response.text())
-            .then(data => {
-              document.getElementById('menu-container').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading the menu:', error));
-        });
-      </script>
-    
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                fetch('menu.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('menu-container').innerHTML = data;
+                    })
+                    .catch(error => console.error('Error loading the menu:', error));
+            });
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
